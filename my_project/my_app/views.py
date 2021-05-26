@@ -25,7 +25,12 @@ def index(request):
     feature4.name = 'Affordable'
     feature4.details = 'Our service is very affordable.'
 
-    features = [feature1, feature2, feature3, feature4]
+    feature5 = Feature()
+    feature5.id = 4
+    feature5.name = 'Trustworthy'
+    feature5.details = 'Service you can trust.'
+
+    features = [feature1, feature2, feature3, feature4, feature5]
     for feature in features:
         pass
 
