@@ -49,7 +49,7 @@ def login(request):
             auth.login(request, user)
             return redirect('/')
         else:
-            messages.info(request, 'Credentials Invalid')
+            messages.info(request, 'Invalid login')
             return redirect('login')
     else:
         return render(request, 'login.html')
