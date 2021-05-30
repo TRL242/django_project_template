@@ -139,11 +139,14 @@
     		    			<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
     		    				<div class="written_text">
     		    					<div class="like_icon"><img src="{% static 'images/like-icon.png' %}"></div>
-    		    					<h1 class="written_text">{{feature.name}}</h1>
+                                    <h1 class="written_text">{{feature.name}}</h1>
     		    					<p>{{feature.details}}</p>
-                                    {% if feature.is_true == 'True' %}
+                                    {% if feature.is_true == True %}
                                     <p>This is true.</p>
+                                    {% else %}
+                                    <p>This is false</p>
                                     {% endif %}
+
     		    				</div>
     		    			</div>
                         {% endfor %}

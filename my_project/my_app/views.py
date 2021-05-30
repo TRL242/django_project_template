@@ -14,7 +14,7 @@ def index(request):
     feature2 = Feature()
     feature2.id = 1
     feature2.name = 'Reliable'
-    feature2.is_true = True
+    feature2.is_true = False
     feature2.details = 'Our service is very reliable.'
 
     feature3 = Feature()
